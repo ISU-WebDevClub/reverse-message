@@ -1,23 +1,14 @@
 {
-  "name": "npmpackagedemo",
+  "name": "reverse-message",
   "version": "1.0.0",
-  "description": "",
+  "description": "Express middleware that reverses GET query parameters",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ISU-WebDevClub/NpmPackageDemo.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ISU-WebDevClub/NpmPackageDemo/issues"
-  },
-  "homepage": "https://github.com/ISU-WebDevClub/NpmPackageDemo#readme",
-  "dependencies": {
-    "body-parser": "^1.19.0",
-    "express": "^4.17.1"
-  }
+  "keywords": [
+    "demo"
+  ],
+  "author": "Web Development Club",
+  "license": "MIT"
 }
