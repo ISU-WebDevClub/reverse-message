@@ -1,4 +1,4 @@
-# reverse-message ![npm](https://img.shields.io/npm/dw/reverse-message)
+# reverse-message ![npm](https://img.shields.io/npm/dt/reverse-message)
 
 Express middleware that reverses all query parameters in a GET request.
 
