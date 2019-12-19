@@ -1,14 +1,17 @@
 {
   "name": "reverse-message",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Express middleware that reverses GET query parameters",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
+    "express",
+    "middleware",
     "demo"
   ],
   "author": "Web Development Club",
+  "homepage": "https://github.com/ISU-WebDevClub/reverse-message",
   "license": "MIT"
 }

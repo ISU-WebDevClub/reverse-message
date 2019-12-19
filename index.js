@@ -1,9 +1,9 @@
 module.exports = function () {
     return function (req, res, next) {
-        
-        req.query.message = req.query.message.split("").reverse().join("");
-        
+        req.query = Object.fromEntries(
+            Object.entries(req.query).map(([k, v]) => [k, v.split("").reverse().join("")])
+        );
         // Implement the middleware function based on the options object
-        next()
+        next();
     }
 }

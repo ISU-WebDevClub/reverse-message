@@ -1,22 +1,21 @@
 const express = require("express");
-const reverse = require("./reverse-message/index.js");
+const reverse = require("../index.js");
 const app = express();
-var bodyParser = require('body-parser')
+const bodyParser = require('body-parser')
 
 const PORT = 8080 || process.env.PORT;
 
-//middleware
+// Middleware
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(express.json());
 app.use(express.static("public"));
 app.use(reverse());
 
 app.get('/middleware-test', (request, response) => {
-    console.log("I ran");
-    response.send(request.query.message);
+    response.send(request.query);
 });
 
-//Starts the server on the given port
+// Starts the server on the given port
 app.listen(PORT, () => {
-    console.log(`Starting the server on port ${PORT}!`);
+    console.log(`Starting the server on http://localhost:${PORT}!`);
 });
